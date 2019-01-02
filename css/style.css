@@ -2838,7 +2838,8 @@ h6 {
   .h_gallery_item:hover .g_img_item:before {
     opacity: .85; }
   .h_gallery_item:hover .g_img_item .light {
-    opacity: 1; }
+    opacity: 1;
+     }
   .h_gallery_item:hover .g_item_text h4:hover {
     color: #766dff; }
 
@@ -3003,6 +3004,11 @@ h6 {
   margin-top: 60px; }
   .copy_right_text p a {
     color: #766dff; }
+
+  .h{
+    border: none;
+    border-image: 0;
+  }  
 
 /* End Footer Area css
 ============================================================================================ */
