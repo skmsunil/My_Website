@@ -164,6 +164,42 @@
         }
     }
     gallery_isotope();
+
+    /*----------------------------------------------------*/
+    /*  Isotope Fillter js for Accomplish
+    /*----------------------------------------------------*/
+    function gallery_isotope1(){
+        if ( $('.gallery_f_inners').length ){
+            // Activate isotope in container
+            $(".gallery_f_inners").imagesLoaded( function() {
+                $(".gallery_f_inners").isotope({
+                    layoutMode: 'fitRows',
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear'
+                    }
+                }); 
+            });
+            
+            // Add isotope click function
+            $(".gallery_filters li").on('click',function(){
+                $(".gallery_filters li").removeClass("active");
+                $(this).addClass("active");
+
+                var selector = $(this).attr("data-filter");
+                $(".gallery_f_inners").isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 450,
+                        easing: "linear",
+                        queue: false,
+                    }
+                });
+                return false;
+            });
+        }
+    }
+    gallery_isotope1();
 	
 	/*----------------------------------------------------*/
     /*  Testimonials Slider

@@ -3010,10 +3010,80 @@ h6 {
   .h{
     border: none;
     border-image: 0;
-  }  
+  } 
 
-/* End Footer Area css
+  /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+
+ /* Collapsable Section css
+============================================================================================ */
+/*---------------------------------------------------- */
+
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.actives, .collapsible:hover {
+  background-color: #555;
+
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  background-color: #f1f1f1;
+}
+
+.collapsible:after {
+  content: "\02796"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+.active1:after {
+  content: '\02795'; /* Unicode character for "minus" sign (-) */
+} 
+
+
+/* Accomplismnets Section css
+============================================================================================ */
+/*---------------------------------------------------- */
+
+.isotope_fillters {
+  margin-bottom: 50px; }
+  .isotope_fillters .gallery_filters {
+    text-align: center; }
+    .isotope_fillters .gallery_filters li {
+      display: inline-block;
+      margin-right: 45px; }
+      .isotope_fillters .gallery_filters li:last-child {
+        margin-right: 0px; }
+      .isotope_fillters .gallery_filters li a {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #222222;
+        transition: all 300ms linear 0s;
+        text-transform: uppercase; }
+      .isotope_fillters .gallery_filters li:hover a, .isotope_fillters .gallery_filters li.active a {
+        color: #766dff; }
+
+.gallery_f_inners {
+  margin-bottom: -45px; }
+
 
 /*# sourceMappingURL=style.css.map */
